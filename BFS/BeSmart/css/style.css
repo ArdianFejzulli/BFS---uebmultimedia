@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.game-title {
+  color: #373737;
+  font-weight: normal;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Shojumaru', cursive;
+}
+
+.info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #373737;
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 180px;
+  width: 125px;
+}
+
+.back-side {
+  background-color: black;
+  border-color: green;
+}
+
+.face-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.card.visible .back-side {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .front-side {
+  transform: rotateY(0);
+}
+
+.card.matched .middle {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #F83C01;
+  display: none;
+  cursor: pointer;
+  font-family: 'Bangers', cursive;
+}
+
+.text-small {
+  font-size: 50px;
+}
+
+.text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: text-grow 500ms forwards;
+}
+
+@keyframes text-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 100px;
+  }
+}
+
+@keyframes dance {
+  0%, 100%  {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+.front-side {
+  background-color: yellowgreen;
+  border-color: black;
+  transform: rotateY(180deg);
+}
+
+.front-side:hover .middle {
+  transform: scale(0.9);
+}
+
+.design-card {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.back-side:hover .design-card {
+  width: 50px;
+  height: 50px;
+}
+
+.design-card-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.design-card-top-right {
+  top: 0;
+  right: 0;
+}
+
+.design-card-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.design-card-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.middle {
+  height: 60px;
+  transform: translateY(-10px);
+  transition: transform 100ms ease-in-out;
+}
+
+.back-side:hover .middle {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(3, auto);
+  }
+}

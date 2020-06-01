@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="./js/script.js" async ></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Mono:wght@500&family=Shojumaru&display=swap" rel="stylesheet">        
+        <title>Be smart and match card</title>
+    </head>
+    <body>
+        <h1 class="game-title">BE SMART - MATCH FRUIT</h1>
+        <div class="text visible">
+            Click to Start
+        </div>
+        <div id="game-over-text" class="text">
+            GAME OVER
+            <span class="text-small">PLAY AGAIN</span>
+        </div>
+        <div id="winner-text" class="text">
+            YOU WIN
+            <span class="text-small">PLAY AGAIN</span>
+        </div>
+        <div class="container">
+            <div class="info-container">
+                <div class="game-info">
+                    Time <span id="time-remaining">100</span>
+                </div>
+                <div class="game-info">
+                    Flips <span id="flips">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/bananas.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/bananas.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/apple.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/apple.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/grapes.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/grapes.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/mango.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/mango.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/orange.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/orange.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/strawberry.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/strawberry.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/drink.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/drink.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/bananas.png"> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="back-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways.png"> 
+                    <img class="middle" src="./assets/Images/middle.png"> 
+                </div>
+                <div class="front-side face-side">
+                    <img class="design-card design-card-top-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-top-right" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-left" src="./assets/Images/sideways2.png"> 
+                    <img class="design-card design-card-bottom-right" src="./assets/Images/sideways2.png"> 
+                    <img class="middle" src="./assets/Images/bananas.png"> 
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
