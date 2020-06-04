@@ -87,20 +87,9 @@ class FindCard {
             card.classList.add('visible');
         }
     }
-    
-
-    flipCard(card) {
-        if(this.canFlipCard(card)) {
-            this.audioController.flip();
-            this.totalClicks++;
-            this.ticker.innerText = this.totalClicks;
-            card.classList.add('visible');
-        }
-    }
 
     canFlipCard(card) {
-        return true;
-        //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
