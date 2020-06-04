@@ -47,7 +47,47 @@ class FindCard {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+
+        setTimeout(() => {
+            this.audioController.startMusic();
+            this.shuffleCards();
+            this.countdown = this.startCountdown();
+            this.busy = false;
+        }, 500);
+
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
     }
+
+    startCountdown() {
+        //time
+    }
+
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+            card.classList.remove('matched');
+        });
+    }
+
+    shuffleCards() {
+        for(let i = this.cardsArray.length - 1; i > 0 ; i--) {
+            let randomIndex = Math.floor(Math.random() * (i+1));
+            this.cardsArray[randomIndex].style.order = i;
+            this.cardsArray[i].style.order = randomIndex;
+        }
+    }
+
+    flipCard(card) {
+        if(this.canFlipCard(card)) {
+            this.audioController.flip();
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
+        }
+    }
+    
 
     flipCard(card) {
         if(this.canFlipCard(card)) {
