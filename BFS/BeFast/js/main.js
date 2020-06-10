@@ -1,7 +1,5 @@
 window.addEventListener('load', init);
 
-
-
 const levels = {
   easy: 7,
   medium: 5,
@@ -70,9 +68,6 @@ const words = [
   'task manager'
 ];
 
-
-
-
 function init() {
   
   seconds.innerHTML = currentLevel;
@@ -95,7 +90,6 @@ function startMatch() {
     score++;
   }
 
-  
   if (score === -1) {
     scoreDisplay.innerHTML = 0;
   } else {
@@ -136,13 +130,15 @@ function countdown() {
   timeDisplay.innerHTML = time;
 }
 
-
 function checkStatus() {
   if (!isPlaying && time === 0) {
     message.innerHTML = 'Game Over!!!';
     score = -1;
   }
 }
+
+
+
 
 
 
