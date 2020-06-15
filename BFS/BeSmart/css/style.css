@@ -8,7 +8,16 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  width: 100%;
+  height: 100vh;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .game-title {
@@ -17,6 +26,7 @@ body {
   text-align: center;
   font-size: 60px;
   font-family: 'Shojumaru', cursive;
+  position: relative;
 }
 
 .info-container {
