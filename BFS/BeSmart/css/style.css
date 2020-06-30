@@ -10,6 +10,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  position: absolute;
 }
 
 .video-container {
@@ -191,6 +192,22 @@ body {
 
 .back-side:hover .middle {
   transform: translateY(0);
+}
+
+.svg-imgright {
+  position: absolute;
+  top: 44%;
+  right: 75%;
+  width: 30%;
+  height: 30%;
+}
+
+.svg-imgleft {
+  position: absolute;
+  top: 44%;
+  left: 75%;
+  width: 30%;
+  height: 30%;
 }
 
 @media (max-width: 600px) {
