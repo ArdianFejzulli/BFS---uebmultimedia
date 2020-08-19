@@ -14,7 +14,8 @@ body {
 }
 
 .video-container {
-  position: absolute;
+  position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -197,7 +198,7 @@ body {
 .svg-imgright {
   position: absolute;
   top: 44%;
-  right: 75%;
+  right: 70%;
   width: 30%;
   height: 30%;
 }
@@ -205,7 +206,7 @@ body {
 .svg-imgleft {
   position: absolute;
   top: 44%;
-  left: 75%;
+  left: 70%;
   width: 30%;
   height: 30%;
 }
@@ -213,5 +214,19 @@ body {
 @media (max-width: 600px) {
   .container {
     grid-template-columns: repeat(3, auto);
+  }
+
+  .svg-imgleft {
+    top: 80%;
+    left: 50%;
+    width: 60%;
+    height: 30%;
+  }
+
+  .svg-imgright {
+    top: 100%;
+    left: 50%;
+    width: 60%;
+    height: 40%;
   }
 }
